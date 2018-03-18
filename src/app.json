@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/levels/index",
+    "pages/play/index",
+    "pages/rank/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "拼音消消乐",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 5000
+  }
+}

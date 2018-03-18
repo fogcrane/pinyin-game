@@ -1,0 +1,13 @@
+<view class="scorll-wrap">
+	<view class="list-box">
+	    <view class="scroll-x" style="width: {{(280 * items.length - 10)}}rpx">
+	        <view class="list-con" data-path="{{item.path}}" bindtap="toDetailByPath" wx:for="{{items}}" wx:key="unique">
+	            <view class="list">
+	                <image src="{{item.thumbnail}}"></image>
+	                <view class="title m-line-h2">{{item.title}}</view>
+	                <view class="price">￥{{item.price}}</view>
+	            </view>
+	        </view>
+	    </view>
+	</view>
+</view>

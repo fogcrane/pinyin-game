@@ -1,0 +1,7 @@
+<view class="link-box">
+	<view class="link-list g-wrap" bindtap="toMyOrder">
+	    <view class="icon-order"></view>
+	    <view class="text">我的订单</view>
+	    <view class="icon-arrow"></view>
+	</view>
+</view>

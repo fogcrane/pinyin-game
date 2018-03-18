@@ -1,0 +1,9 @@
+<template name="lineTip">
+	<view class="line-tips-box">
+		<view class="g-line-tips">
+		    <view class="line"></view>
+		    <view class="text">{{tips}}</view>
+		    <view class="line"></view>
+		  </view>
+	</view>
+</template>

@@ -1,0 +1,13 @@
+.link-box {
+    margin-bottom: 20rpx;
+    background-color: #fff;
+    .link-list {
+        display: flex;
+        align-items: center;
+        height: 88rpx;
+        .text {
+            padding-left: 10rpx;
+            flex: 1;
+        }
+    }
+}

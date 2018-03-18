@@ -1,0 +1,6 @@
+<view class="cate-icon">
+  <view class="cate-cell" data-id="{{tab.id}}" bindtap="toCatePage" wx:for="{{items}}" wx:key="unique" wx:for-item="tab">
+    <image src="{{tab.thumbnail}}"></image>
+    <text>{{tab.name}}</text>
+  </view>
+</view>

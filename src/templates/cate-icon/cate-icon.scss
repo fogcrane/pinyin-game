@@ -1,0 +1,26 @@
+.cate-icon {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  .cate-cell {
+    position: relative;
+    width: 25%;
+    line-height: 1;
+    text-align: center;
+    image {
+      width: 90rpx;
+      height: 90rpx;
+      display: block;
+      margin: 20rpx auto 0;
+      border-radius: 50%;
+    }
+    text {
+      display: block;
+      height: 50rpx;
+      line-height: 50rpx;
+      margin-bottom: 16rpx;
+      box-sizing: border-box;
+      color: #444;
+    }
+  }
+}

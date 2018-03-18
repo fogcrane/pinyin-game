@@ -1,0 +1,14 @@
+<import src="/templates/line-tips/line-tips.wxml" />    
+
+<view class="product-lists">
+  <view class="product-list-box" data-id="{{item.id}}" bindtap="toDetail" wx:for="{{items}}" wx:key="unique">
+      <view class="product-list">
+          <image src="{{item.thumbnail}}"></image>
+          <view class="title m-line-h2 c33">{{item.title}}</view>
+          <view class="price"><text>￥</text>{{item.price}}</view>
+      </view>
+  </view>
+  <block wx:if="{{items.length===0}}">
+    <template is="lineTip" data="{{tips: '暂无数据'}}" />
+  </block>
+</view>

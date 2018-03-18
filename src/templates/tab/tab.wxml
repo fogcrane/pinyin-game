@@ -1,0 +1,5 @@
+<view class="activity-tab">
+	<view wx:for="{{category}}" wx:key="unique" wx:for-item="tab">
+	  <text class="{{cateIndex === index ? 'active' : '' }}" data-index="{{index}}" bindtap="clickTab">{{tab.name}}</text>
+	</view>
+</view>

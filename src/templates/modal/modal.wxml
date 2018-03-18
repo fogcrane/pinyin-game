@@ -1,0 +1,13 @@
+<view class="modal" hidden="{{showModal}}">
+	<view class="modal-box modal-bg">
+		<view class="modal-content">
+			<view class="gold-icon">
+				<view class="text">当前排名：{{current_rank}}</view>
+			</view>
+			<view class="success">闯关成功</view>
+			<view class="info"><view>恭喜你战得</view><text>KILLER商城100元代⾦金券 </text>1张<view>离拥有世界第二贵口红又近了一步！</view></view>
+			<view class="btn" bindtap="closeModal">好的</view>
+		</view>
+		<view class="close" bindtap="closeModal"></view>
+	</view>
+</view>

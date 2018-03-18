@@ -1,0 +1,21 @@
+.f-tips {
+    position: fixed;
+    /*top: 0;*/
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 99;
+    text-align: center;
+    height: 70rpx;
+    line-height: 70rpx;
+    width: 60%;
+    max-width: 60%;
+    display: inline-block;
+    padding: 0 20rpx;
+    /*background: rgba(0, 0, 0, 0.7);*/
+    background: #494949;
+    font-size: 32rpx;
+    color: #fff;
+    border-radius: 12rpx;
+}

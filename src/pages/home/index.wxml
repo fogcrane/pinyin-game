@@ -1,0 +1,4 @@
+<view>首页</view>
+
+<view bindtap="linkToLevel">开始游戏</view>
+<view bindtap="linkToRank">排行榜</view>

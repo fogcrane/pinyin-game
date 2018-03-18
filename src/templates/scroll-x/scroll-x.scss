@@ -1,0 +1,42 @@
+.scorll-wrap {
+    padding: 0 12rpx;
+    .list-box {
+        overflow-x: auto;
+        .scroll-x {
+            &:after {
+                display: table;
+                content: " ";
+                clear: both;
+            }
+            .list-con {
+                float: left;
+                width: 260rpx;
+                padding: 14rpx 14rpx 0;
+                margin: 0 10rpx;
+                background-color: #fff;
+                &:last-child {
+                    margin-right: 0;
+                }
+                .list {
+                    image {
+                        width: 100%;
+                        height: 236rpx;
+                    }
+                    .title {
+                        margin-top: 4rpx;
+                        margin-bottom: 4rpx;
+                        height: 80rpx;
+                        line-height: 40rpx;
+                    }
+                    .price {
+                        line-height: 48rpx;
+                        padding-bottom: 10rpx;
+                        font-size: 28rpx;
+                        font-weight: bold;
+                        color: #e6162c;
+                    }
+                }
+            }
+        }
+    }
+}

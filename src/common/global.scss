@@ -1,0 +1,20 @@
+// some global style
+
+.show{
+	display: block;
+}
+
+.hidden{
+	display: none;
+}
+
+.wxParse-p,
+.wxParse-div{
+	margin-top: 25rpx;
+	margin-bottom: 25rpx;
+}
+
+.wxParse-div image,
+.wxParse-p image{
+	width:100%;
+}

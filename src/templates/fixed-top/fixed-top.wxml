@@ -1,0 +1,1 @@
+<view class="fixed-top" hidden="{{showFixedTop}}">{{fixedTopInfo}}</view>

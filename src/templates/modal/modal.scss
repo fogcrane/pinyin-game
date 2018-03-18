@@ -1,0 +1,93 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    padding: 200rpx 50rpx 200rpx;
+    background-color: rgba(66, 66, 66, 0.7);
+    text-align: center;
+    .modal-box {
+        position: relative;
+        width: 100%;
+        height: 750rpx;
+        padding: 0 60rpx;
+        background: #fff;
+        .modal-content {
+            padding-top: 14rpx;
+            .gold-icon {
+                position: relative;
+                margin: 0 auto;
+                .text {
+                    position: absolute;
+                    bottom: 26rpx;
+                    right: 0;
+                    left: 0;
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 26rpx;
+                    color: #fff;
+                }
+            }
+            .success {
+                font-size: 44rpx;
+                line-height: 64rpx;
+                color: #333;
+            }
+            .info {
+                margin-bottom: 26rpx;
+                margin-top: 24rpx;
+                line-height: 52rpx;
+                font-size: 32rpx;
+                color: #666;
+                text {
+                    color: #e51937;
+                }
+            }
+            .btn {
+                width: 300rpx;
+                height: 68rpx;
+                line-height: 68rpx;
+                margin: 0 auto;
+                text-align: center;
+                background-color: #e51937;
+                color: #fff;
+                font-size: 32rpx;
+                border-radius: 32rpx;
+            }
+        }
+
+        .list-box {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            .answer-lists {
+                width: 100%;
+                height: 100%;
+                .list {
+                    line-height: 1.2;
+                    padding: 24rpx 0;
+                    border-bottom: 1rpx dashed #7d3e26;
+                    font-size: 32rpx;
+                    color: #7b3412;
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                    text {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .close {
+            position: absolute;
+            right: 0;
+            left: 0;
+            margin: auto;
+            bottom: -82rpx;
+            z-index: 99;
+        }
+        
+    }
+}

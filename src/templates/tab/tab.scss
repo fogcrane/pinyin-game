@@ -1,0 +1,23 @@
+.activity-tab {
+  display: flex;
+  flex-wrap: nowrap;
+  /* padding: 0 16rpx; */
+  overflow-x: auto;
+  background-color: #fff;
+}
+.activity-tab view {
+  white-space: nowrap;
+  line-height: 1;
+  text-align: center;
+  flex: 1;
+  padding: 0 20rpx;
+}
+.activity-tab view text {
+  padding: 25rpx 0rpx;
+  display: inline-block;  
+
+}
+.activity-tab view text.active {
+  color: #e60013;
+  border-bottom: 4rpx solid #e60013;
+}
