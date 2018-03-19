@@ -1,1 +1,60 @@
-<view>排行榜页</view>
+<view wx:if="{{ranking_list!==null}}">
+	<view class="header"> <!-- 头部固定定位区 -->
+		<view class="head_box"> <!-- 红色背景容器 -->
+			<view>
+				<view class="rank_pannel"><!-- 排行的pannel第二名 -->
+				    <image src="/images/rank_2.png" mode="aspectFill" />
+	                <view class="rank_user_img rank_2">
+	                  <image src="{{ranking_list[1].avatarurl}}" mode="aspectFill" />
+	                </view>
+	                <view class="user_name">{{ranking_list[1].nickname}}</view>
+	                <view class="user_score">
+	                	<text>{{ranking_list[1].total_score}}</text>分
+	                </view>
+				</view>
+				<view class="rank_pannel first"><!-- 排行的pannel第一名 -->
+				    <image src="/images/rank_1.png" mode="aspectFill" />
+	                <view class="rank_user_img rank_1">
+	                  <image src="{{ranking_list[0].avatarurl}}" mode="aspectFill" />
+	                </view>
+	                <view class="user_name">{{ranking_list[0].nickname}}</view>
+	                <view class="user_score">
+	                	<text>{{ranking_list[0].total_score}}</text>分
+	                </view>
+
+                    <image class="rank_shadow left" src="/images/rank_shadow.png" mode="aspectFill" />
+                    <image class="rank_shadow right" src="/images/rank_shadow.png" mode="aspectFill" />
+				</view>
+				<view class="rank_pannel"><!-- 排行的pannel 第三名-->
+				    <image src="/images/rank_3.png" mode="aspectFill" />
+	                <view class="rank_user_img rank_3">
+	                  <image src="{{ranking_list[2].avatarurl}}" mode="aspectFill" />
+	                </view>
+	                <view class="user_name">{{ranking_list[2].nickname}}</view>
+	                <view class="user_score">
+	                	<text>{{ranking_list[2].total_score}}</text>分
+	                </view>
+				</view>
+			</view>
+		</view>
+		<view class="rank_list_item head_rank_item" wx:if="{{my_rank}}">
+			<view wx:if='{{my_rank.ranking_no<9999}}' class="number">{{my_rank.ranking_no}}</view>
+			<view wx:else class="number">9999+</view>
+			<image src="{{my_rank.avatarurl}}" mode="aspectFill" />
+			<view class="user_name">{{my_rank.nickname}}</view>
+			<view class="user_score"><text>{{my_rank.total_score}}</text>分</view>
+		</view>
+	</view>
+	<view class="scroll_box" style="{{my_rank===null?'padding-top:410rpx':''}}"><!-- 底部滚动区 -->
+		<view wx:for="{{ranking_list}}" wx:key="" class="rank_list_item">
+			<view wx:if='{{item.ranking_no<9999}}' class="number">{{item.ranking_no}}</view>
+			<view wx:else class="number">9999+</view>
+			<image src="{{item.avatarurl}}" mode="aspectFill" />
+			<view class="user_name">{{item.nickname}}</view>
+			<view class="user_score"><text>{{item.total_score}}</text>分</view>
+		</view>
+	</view>
+	<view class="footer">
+		<navigator url="/pages/levels/index">开始答题</navigator>
+	</view>
+</view>

@@ -1,4 +1,19 @@
-<view>首页</view>
-
-<view bindtap="linkToLevel">开始游戏</view>
-<view bindtap="linkToRank">排行榜</view>
+<view class="container">
+	<view wx:if="{{!showattendance}}" class="attendance sign-in-bg" bindtap="hideModal">签到</view>
+	<view wx:else class="attendance sign-in-bg">已签到</view>
+	<view class="choose">
+		<view class="level level-bg" bindtap="linkToLevel">关卡选择</view>
+		<view class="play rank-bg" bindtap="linkToRank">排行榜</view>
+	</view>
+</view>
+<view class="modal" bindtap="hideModal" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+	<view class="icon"></view>
+	<view class="dialog" >
+		<view class="content">
+			<view class="curr-money">当前金币{{money}}金币</view>
+			<view class="add-money"><text>+50</text>金币</view>
+		</view>
+		<view class="footer" bindtap="clickDetermine">确定</view>
+	</view>
+</view>

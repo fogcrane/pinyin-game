@@ -1,1 +1,10 @@
-<view bindtap="linkToPlay">关卡页</view>
+<view class="container">
+	<block wx:for="{{level}}" wx:key="unique">
+		<block wx:if="{{item.status == true}}">
+			<view class="pass" data-id="{{item.id}}" bindtap="linkToIdiomPlay">{{item.level}}</view>
+		</block>
+		<block wx:elif="{{item.status == false}}">
+			<view class="un-pass" style="color: red;"></view>
+		</block>
+	</block>
+</view>

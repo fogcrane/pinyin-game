@@ -13,9 +13,9 @@ const options = {
     selectId: []
   },
 
-  onLoad() {
+  onLoad(options) {
     let param = {
-      currentPage: 1,
+      currentPage: options.id,
       pageSize: 10
     };
     api.playData(param).then(res => {

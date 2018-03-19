@@ -3,19 +3,39 @@ const api = require('../../utils/api.js');
 
 const options = {
 
-  data: {},
+  data: {
+    page_title: "",
+    share_path: "",
+    showModal: false,
+    money: 200
+  },
 
   onLoad() {},
 
-  linkToLevel(){
+  linkToLevel() {
     wx.navigateTo({
       url: '../levels/index'
     })
   },
 
-  linkToRank(){
+  linkToRank() {
     wx.navigateTo({
       url: '../rank/index'
+    })
+  },
+
+  hideModal() {
+    this.setData({
+      showModal: !this.data.showModal
+    })
+  },
+
+  clickDetermine() {
+    var money = this.data.money + 50;
+    this.setData({
+      money: money,
+      showModal: !this.data.showModal,
+      showattendance: true
     })
   },
 
