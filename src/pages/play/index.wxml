@@ -1,1 +1,6 @@
-<view>游戏页</view>
+<view class="container" wx:if="{{showFlag}}">
+	<view class="tips">{{curr_tip}}</view>
+	<view class="word-list">
+		<view class="item text-bg {{item.isSelected ? 'text-active-bg' : ''}}  {{item.isHide ? 'hidden' : ''}}" wx:for="{{word}}" wx:key="unique" data-text="{{item.word}}" data-id="{{index}}" bindtap="selectWord">{{item.word}}</view>
+	</view>
+</view>

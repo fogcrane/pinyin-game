@@ -1,0 +1,27 @@
+page{
+    background-color:#f0c7ab;
+    color:#7d3e26;
+}
+
+.container{
+	font-size: 40rpx;
+	.tips{
+		margin: 40rpx auto;
+		text-align: center;
+		color: #555;
+	}
+	.word-list{
+		width: 88%;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		padding-left: 4rpx;
+		justify-content: flex-start;
+		.item{
+			margin: 15rpx 15rpx 0 0;
+			text-align: center;
+			line-height: 88rpx;
+			box-sizing:border-box;
+		}
+	}
+}
