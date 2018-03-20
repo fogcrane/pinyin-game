@@ -1,5 +1,7 @@
 const mixins = require('../../utils/mixins');
 const api = require('../../utils/api.js');
+const Auth = require('../../utils/auth.js');
+const base = require('../../utils/base.js');
 
 const options = {
 
@@ -10,7 +12,18 @@ const options = {
     money: 200
   },
 
-  onLoad() {},
+  onLoad() {
+    Auth.getUserInfo().then(res => {
+      console.log("res", res)
+      this.setData({
+        user: res.userInfo
+      });
+    })
+
+    // base.checkOrSignon().then(user => {
+    //   console.log("user", user)
+    // })
+  },
 
   linkToLevel() {
     wx.navigateTo({

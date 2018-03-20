@@ -7,14 +7,14 @@ const API = require('./base')
 //     return API.post('/api/user.invate.json',data)
 // }
 
-const playData = (data)=>{
-  return API.get("word/getList",data);
+const playData = (data) => {
+  return API.get("word/getList", data);
 }
 
-
 module.exports = Object.assign(
-  API,
-  {playData}
-  // {authSignon: API.guard(authSignon)}, 
+  API, {
+    playData: API.guard(playData)
+  }
+  // {authSignon: API.guard(authSignon)},
   // {touristList}
 )

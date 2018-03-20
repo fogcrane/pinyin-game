@@ -1,6 +1,11 @@
 <view class="container">
 	<view wx:if="{{!showattendance}}" class="attendance sign-in-bg" bindtap="hideModal">签到</view>
 	<view wx:else class="attendance sign-in-bg">已签到</view>
+	<view class="title">拼音消消乐</view>
+	<view class="userinfo">
+		<view class="avatar"><image src="{{user.avatarUrl}}"></image></view>
+		<view class="name">{{user.nickName}}</view>
+	</view>
 	<view class="choose">
 		<view class="level level-bg" bindtap="linkToLevel">关卡选择</view>
 		<view class="play rank-bg" bindtap="linkToRank">排行榜</view>
